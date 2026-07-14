@@ -1,7 +1,7 @@
 export interface Project {
   id: string;
   title: string;
-  category: 'Branding' | 'Editorial' | 'Packaging' | 'Digital';
+  category: 'ERP' | 'Backend' | 'Frontend' | 'Graphics' | 'Systems';
   year: string;
   client: string;
   role: string;

@@ -1,6 +1,6 @@
 {
   "name": "Design Portfolio & Branding",
-  "description": "An ultra-professional Swiss-modern portfolio website showcasing graphic design, branding, packaging, and editorial projects, featuring an interactive live Brand Identity Lab.",
+  "description": "An ultra-professional software engineering and ERP portfolio showcasing full-stack workflows, C++ OpenGL engines, and database modeling, featuring an interactive live Developer Sandbox.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

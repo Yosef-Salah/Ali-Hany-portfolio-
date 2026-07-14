@@ -27,7 +27,7 @@ import { projects, services, testimonials } from './data';
 import { Project } from './types';
 
 export default function App() {
-  const [selectedCategory, setSelectedCategory] = useState<'All' | 'Branding' | 'Editorial' | 'Packaging' | 'Digital'>('All');
+  const [selectedCategory, setSelectedCategory] = useState<'All' | 'ERP' | 'Backend' | 'Frontend' | 'Graphics' | 'Systems'>('All');
   const [activeProject, setActiveProject] = useState<Project | null>(null);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
@@ -35,12 +35,13 @@ export default function App() {
     ? projects
     : projects.filter(p => p.category === selectedCategory);
 
-  const categories: ('All' | 'Branding' | 'Editorial' | 'Packaging' | 'Digital')[] = [
+  const categories: ('All' | 'ERP' | 'Backend' | 'Frontend' | 'Graphics' | 'Systems')[] = [
     'All',
-    'Branding',
-    'Packaging',
-    'Editorial',
-    'Digital',
+    'ERP',
+    'Backend',
+    'Frontend',
+    'Graphics',
+    'Systems',
   ];
 
   const handleNextTestimonial = () => {
@@ -76,7 +77,7 @@ export default function App() {
             className="flex items-center gap-2 mb-6"
           >
             <span className="px-2.5 py-1 bg-white/[0.04] text-brand-orange text-[10px] font-mono uppercase tracking-widest rounded border border-white/5">
-              Art Direction & Corporate Identity
+              Enterprise ERP & Software Systems
             </span>
             <span className="w-1.5 h-1.5 bg-brand-orange rounded-full animate-ping" />
           </motion.div>
@@ -89,7 +90,7 @@ export default function App() {
               transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
               className="font-display font-bold text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[0.95] text-[#f4f4f4] uppercase"
             >
-              We craft <span className="text-gold-gradient">magnetic</span> brand systems.
+              We engineer <span className="text-gold-gradient">robust</span> digital systems.
             </motion.h1>
 
             <motion.p
@@ -98,7 +99,7 @@ export default function App() {
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="text-brand-muted text-base md:text-xl font-sans max-w-2xl font-light leading-relaxed pt-2"
             >
-              A premium graphic design and art direction practice specializing in Swiss layout structure, custom luxury packaging, and responsive digital-first identity ecosystems.
+              Computer Science student and software engineer specializing in custom ERP architectures, robust backend workflows, database design, and interactive graphics pipelines.
             </motion.p>
           </div>
 
@@ -114,7 +115,7 @@ export default function App() {
               href="#works"
               className="flex items-center justify-center gap-2 px-8 py-4 bg-brand-orange text-[#080808] font-bold hover:bg-[#f4f4f4] font-mono text-xs uppercase tracking-wider rounded-full transition-all duration-300 shadow-xl group cursor-pointer"
             >
-              Examine Selected Work
+              Examine Technical Work
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
@@ -122,7 +123,7 @@ export default function App() {
               href="#contact"
               className="flex items-center justify-center gap-2 px-8 py-4 border border-white/20 hover:border-brand-orange text-[#f4f4f4] hover:bg-white/[0.02] font-mono text-xs uppercase tracking-wider rounded-full transition-all duration-300"
             >
-              Initiate Consultation
+              Initiate Collaboration
               <ArrowUpRight className="w-4 h-4" />
             </a>
           </motion.div>
@@ -135,20 +136,20 @@ export default function App() {
             className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-16 mt-16 border-t border-white/5 font-mono"
           >
             <div>
-              <span className="text-brand-muted text-[10px] block uppercase tracking-wider">PROJECTS COMPLETED</span>
-              <span className="text-2xl font-semibold text-[#f4f4f4]">48+ Worldwide</span>
+              <span className="text-brand-muted text-[10px] block uppercase tracking-wider">PRACTICAL PROJECTS</span>
+              <span className="text-2xl font-semibold text-[#f4f4f4]">5+ Complex Systems</span>
             </div>
             <div>
-              <span className="text-brand-muted text-[10px] block uppercase tracking-wider">SUCCESS RATE</span>
-              <span className="text-2xl font-semibold text-[#f4f4f4]">100% Client Trust</span>
+              <span className="text-brand-muted text-[10px] block uppercase tracking-wider">ACADEMIC EXCELLENCE</span>
+              <span className="text-2xl font-semibold text-[#f4f4f4]">3.2 GPA / AAST CS</span>
             </div>
             <div>
-              <span className="text-brand-muted text-[10px] block uppercase tracking-wider">AWARDS & PRESS</span>
-              <span className="text-2xl font-semibold text-[#f4f4f4]">12 Design Honors</span>
+              <span className="text-brand-muted text-[10px] block uppercase tracking-wider">ERP FOCUS</span>
+              <span className="text-2xl font-semibold text-[#f4f4f4]">Odoo & Python Workflows</span>
             </div>
             <div>
-              <span className="text-brand-muted text-[10px] block uppercase tracking-wider">DESIGN PHILOSOPHY</span>
-              <span className="text-2xl font-semibold text-brand-orange">Swiss Grid Focus</span>
+              <span className="text-brand-muted text-[10px] block uppercase tracking-wider">ENGINEERING CODE</span>
+              <span className="text-2xl font-semibold text-brand-orange">Clean & Robust Architecture</span>
             </div>
           </motion.div>
         </div>
@@ -300,15 +301,15 @@ export default function App() {
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-4">
               <span className="font-mono text-xs text-brand-orange uppercase tracking-widest font-bold">
-                03 / Creative Philosophy
+                03 / Engineering Philosophy
               </span>
               <h2 className="font-display font-bold text-4xl md:text-5xl tracking-tight uppercase text-gold-gradient leading-tight">
-                Beauty through order.<br />Form through function.
+                Performance through order.<br />Reliability through function.
               </h2>
             </div>
 
             <p className="font-sans text-brand-muted text-sm md:text-base leading-relaxed font-light">
-              We approach graphic design as visual architecture. Rather than relying on passing ornamental trends, we look for mathematical grids, historical typographic pairings, and tactile raw materials that tell a brand story with absolute clarity. 
+              I approach software engineering as digital architecture. By combining clean type-safe backend schemas, reliable relational database modeling, automated ERP workflows, and low-level computer graphics pipeline math, I build systems designed to perform flawlessly and scale indefinitely.
             </p>
 
             {/* Design Rules Timeline */}
@@ -316,22 +317,22 @@ export default function App() {
               <div className="flex gap-4 items-start pb-4 border-b border-white/10">
                 <span className="font-mono text-brand-orange font-bold text-xs pt-1">01 /</span>
                 <div>
-                  <h4 className="font-display font-semibold text-lg text-[#f4f4f4]">Swiss Grid Alignment</h4>
-                  <p className="text-xs text-brand-muted mt-1">We build using precise proportional templates, creating an underlying rhythmic structure that aligns content flawlessly across digital layouts and print sheets.</p>
+                  <h4 className="font-display font-semibold text-lg text-[#f4f4f4]">Type-Safe & Modular Architecture</h4>
+                  <p className="text-xs text-brand-muted mt-1">I program using strictly typed, modular, and reusable blocks—ensuring code maintenance remains low, scalability is high, and runtime exceptions are caught at compile-time.</p>
                 </div>
               </div>
               <div className="flex gap-4 items-start pb-4 border-b border-white/10">
                 <span className="font-mono text-brand-orange font-bold text-xs pt-1">02 /</span>
                 <div>
-                  <h4 className="font-display font-semibold text-lg text-[#f4f4f4]">Eco-Material Honesty</h4>
-                  <p className="text-xs text-brand-muted mt-1">Packaging must respect the planet. We champion compostable organic stocks, post-consumer glass, and soy-based raw ink layers without compromising high tactile quality.</p>
+                  <h4 className="font-display font-semibold text-lg text-[#f4f4f4]">Relational Database Precision</h4>
+                  <p className="text-xs text-brand-muted mt-1">I construct database models utilizing third-normal-form layouts and smart indexes on PostgreSQL, preventing data redundancy and optimizing execution query speed for high-throughput applications.</p>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
                 <span className="font-mono text-brand-orange font-bold text-xs pt-1">03 /</span>
                 <div>
-                  <h4 className="font-display font-semibold text-lg text-[#f4f4f4]">Expressive Typography</h4>
-                  <p className="text-xs text-brand-muted mt-1">Typefaces carry vocal inflections. We carefully curate custom historical glyphs and high-contrast headlines that announce your presence clearly before any reader reads a single word.</p>
+                  <h4 className="font-display font-semibold text-lg text-[#f4f4f4]">ERP Workflow Automation</h4>
+                  <p className="text-xs text-brand-muted mt-1">I leverage Python and Odoo's native framework layers to map intricate, error-free corporate processes directly into automated, unified dashboards that save administrative overhead.</p>
                 </div>
               </div>
             </div>
@@ -341,16 +342,16 @@ export default function App() {
           <div className="lg:col-span-5 space-y-6">
             <div className="relative aspect-square rounded-3xl overflow-hidden bg-[#121212] border border-white/5">
               <img
-                src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?auto=format&fit=crop&q=80&w=800"
-                alt="Studio setup closeup"
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
+                alt="Software development workstation setup"
                 className="w-full h-full object-cover opacity-80"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 text-[#f4f4f4]">
-                <span className="font-mono text-[9px] tracking-widest uppercase text-brand-orange">THE CREATIVE HEAD</span>
-                <p className="font-display font-semibold text-lg mt-1 text-gold-gradient">Yosef Salah</p>
-                <p className="font-mono text-[9px] opacity-75">Principal Designer & Brand Architect</p>
+                <span className="font-mono text-[9px] tracking-widest uppercase text-brand-orange">THE ENGINEER</span>
+                <p className="font-display font-semibold text-lg mt-1 text-gold-gradient">Ali Hany Medhat</p>
+                <p className="font-mono text-[9px] opacity-75">Computer Science & Software Engineer</p>
               </div>
             </div>
 
@@ -359,21 +360,27 @@ export default function App() {
               <div className="flex items-center gap-2">
                 <Cpu className="w-5 h-5 text-brand-orange" />
                 <h4 className="font-mono text-xs uppercase tracking-widest font-bold text-gold-gradient">
-                  Creative Tech Integration
+                  Full-Stack ERP Capability
                 </h4>
               </div>
               <p className="text-[11px] font-mono leading-relaxed text-gray-400">
-                In addition to print layout and brand aesthetics, we build responsive code solutions (React, Tailwind, Motion) to bring identities to life on the screen. True design-to-code continuity.
+                Deeply experienced in linking native ERP frameworks (Odoo, PostgreSQL) with robust backend engines (Python, Scala) and polished frontends. True database-to-user continuity.
               </p>
               <div className="flex flex-wrap gap-1.5 pt-2">
                 <span className="text-[9px] font-mono bg-white/[0.02] text-brand-orange/80 px-2.5 py-0.5 rounded border border-white/5">
-                  #TS-Code
+                  #Python
                 </span>
                 <span className="text-[9px] font-mono bg-white/[0.02] text-brand-orange/80 px-2.5 py-0.5 rounded border border-white/5">
-                  #Tailwind4
+                  #Odoo-ERP
                 </span>
                 <span className="text-[9px] font-mono bg-white/[0.02] text-brand-orange/80 px-2.5 py-0.5 rounded border border-white/5">
-                  #Fluid-Motion
+                  #PostgreSQL
+                </span>
+                <span className="text-[9px] font-mono bg-white/[0.02] text-brand-orange/80 px-2.5 py-0.5 rounded border border-white/5">
+                  #Scala-Backend
+                </span>
+                <span className="text-[9px] font-mono bg-white/[0.02] text-brand-orange/80 px-2.5 py-0.5 rounded border border-white/5">
+                  #React-TS
                 </span>
               </div>
             </div>

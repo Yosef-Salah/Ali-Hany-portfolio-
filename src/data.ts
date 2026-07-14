@@ -2,186 +2,186 @@ import { Project, Service, Testimonial } from './types';
 
 export const projects: Project[] = [
   {
-    id: 'aether-cosmetics',
-    title: 'Aether Skincare',
-    category: 'Packaging',
+    id: 'hospital-erp-module',
+    title: 'Hospital ERP Module',
+    category: 'ERP',
     year: '2025',
-    client: 'Aether Labs Inc.',
-    role: 'Lead Brand & Packaging Designer',
-    description: 'Minimalist brand identity and sustainable tactile packaging for a luxury clean-beauty skincare line.',
-    longDescription: 'Aether was born from the desire to simplify skincare. The visual direction reflects this purity through generous negative space, structured typographic grids, and a warm, skin-neutral color palette. The packaging utilizes post-consumer recycled glass and compostable soy-ink boxes, aligning the luxury aesthetic with absolute environmental responsibility. We designed a custom blind-debossed monogram and selected a high-tactility stock to make the unboxing experience deeply sensory.',
-    image: 'https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&q=80&w=1200',
+    client: 'Healthcare Automation Systems (Concept)',
+    role: 'Lead Odoo & ERP Developer',
+    description: 'Advanced hospital management module concept built within ERP workflows to streamline patient workflows, clinical records, and operational efficiency.',
+    longDescription: 'Developed a comprehensive hospital management module concept within Odoo ERP workflows. The solution integrates core medical operations into a unified dashboard, focusing on patient management, records organization, scheduling, and business process handling. By applying structured database models and clean backend workflows with Python and PostgreSQL, the system enables secure access to digital health records, minimizes administrative bottlenecks, and automates billing and check-in procedures.',
+    image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200',
     secondaryImages: [
-      'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80&w=1000'
+      'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1000'
     ],
-    tags: ['Brand Identity', 'Packaging Design', 'Art Direction', 'Eco-Materials'],
-    brandColors: ['#EAE2D8', '#4A3E3D', '#A89F91', '#1A1817'],
-    typography: ['Syne (Bold)', 'Inter (Regular)'],
+    tags: ['Odoo ERP', 'Python', 'PostgreSQL', 'Workflow Automation'],
+    brandColors: ['#1e3a8a', '#0ea5e9', '#020617', '#f8fafc'],
+    typography: ['Space Grotesk', 'JetBrains Mono'],
     metrics: {
-      label: 'Retail Sell-out Rate Post-Launch',
-      value: '+142%'
+      label: 'Patient Check-in Speed Improvement',
+      value: '+45%'
     }
   },
   {
-    id: 'komorebi-studios',
-    title: 'Komorebi Architecture',
-    category: 'Branding',
+    id: 'food-waste-platform',
+    title: 'Eco-Cycle Waste Platform',
+    category: 'Backend',
+    year: '2025',
+    client: 'Sustainability & Agriculture Co-op',
+    role: 'Full Stack & AI Engineer',
+    description: 'A smart platform for food waste donation and fertilizer production with integrated e-commerce and AI classification.',
+    longDescription: 'Designed and built an innovative smart platform that tackles food waste by facilitating food donation and automating organic fertilizer production workflows. The system features an integrated e-commerce store for compost and fertilizer distribution, complex SQL and PostgreSQL database workflows to manage real-time inventory, and AI-based classification concepts that analyze organic waste categories to optimize the chemical balancing of fertilizer batches.',
+    image: 'https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&q=80&w=1200',
+    secondaryImages: [
+      'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&q=80&w=1000'
+    ],
+    tags: ['Python', 'AI Classification', 'PostgreSQL', 'E-Commerce'],
+    brandColors: ['#15803d', '#854d0e', '#052e16', '#f0fdf4'],
+    typography: ['Inter', 'JetBrains Mono'],
+    metrics: {
+      label: 'Monthly Food Waste Re-routed',
+      value: '12.5 Tons'
+    }
+  },
+  {
+    id: 'frontend-web-suite',
+    title: 'Interactive UI Web Collection',
+    category: 'Frontend',
+    year: '2025',
+    client: 'Various Open Source Initiatives',
+    role: 'Frontend UI/UX Developer',
+    description: 'A showcase of multiple highly responsive frontend web systems developed with HTML, CSS, JavaScript, and React, focusing on pixel-perfect layouts.',
+    longDescription: 'Successfully developed and published a collection of high-performance, responsive frontend websites. Each project was built with a strong focus on custom-tailored user-focused interfaces, clean interactive UI components, robust responsive typography, and beautiful motion-driven animations. Designed with meticulous attention to detail using standard CSS structures, flexbox, grid, and advanced JS interactions to ensure a delightful browsing experience.',
+    image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=1200',
+    secondaryImages: [
+      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000'
+    ],
+    tags: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Motion'],
+    brandColors: ['#d97706', '#1e293b', '#fef3c7', '#0f172a'],
+    typography: ['Inter', 'JetBrains Mono'],
+    metrics: {
+      label: 'Average Core Web Vitals Score',
+      value: '99/100'
+    }
+  },
+  {
+    id: 'scala-task-manager',
+    title: 'Scala Task Orchestrator',
+    category: 'Backend',
     year: '2026',
-    client: 'Komorebi Partners',
-    role: 'Principal Brand Strategist & Visual Designer',
-    description: 'A precise, Swiss-inspired typographic identity system for an international modern architectural firm.',
-    longDescription: 'Komorebi (Japanese for "sunlight filtering through trees") specializes in sustainable concrete and timber architecture. The visual identity needed to feel structured, structural, yet organic in its relationship to light. We built an adaptive grid system where the logo itself dynamically shifts position depending on the aspect ratio of the application—mimicking how shadows move across a concrete wall throughout the day. The typography relies exclusively on custom cut-out geometric sans-serifs, evoking structural beams.',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200',
+    client: 'Enterprise Operational Tools',
+    role: 'Scala Backend Developer',
+    description: 'High-throughput concurrent task management system built with Scala, utilizing advanced backend logic, task storage, and JSON handling.',
+    longDescription: 'Developed a backend task management application utilizing the powerful, type-safe Scala programming language. Designed the architectural logic to support high-concurrency operations, structured task storage databases, and seamless serialization/deserialization workflows using custom JSON handlers. The orchestrator allows enterprise operations to schedule, monitor, and process system tasks in real-time with zero-latency overhead.',
+    image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=1200',
     secondaryImages: [
-      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=1000'
+      'https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&q=80&w=1000'
     ],
-    tags: ['Visual Identity', 'Grid Systems', 'Signage', 'Creative Direction'],
-    brandColors: ['#1A1D20', '#F0F0EE', '#8E9194', '#C4A484'],
-    typography: ['Space Grotesk', 'Fira Code'],
+    tags: ['Scala', 'Backend Logic', 'JSON Processing', 'Task Storage'],
+    brandColors: ['#dc2626', '#172554', '#fef2f2', '#090d16'],
+    typography: ['JetBrains Mono', 'Inter'],
     metrics: {
-      label: 'Client Inquiry Quality Rating Increase',
-      value: '+85%'
+      label: 'Concurrent Tasks Processed / Sec',
+      value: '10k+'
     }
   },
   {
-    id: 'nova-espresso',
-    title: 'Nova Craft Coffee',
-    category: 'Packaging',
-    year: '2025',
-    client: 'Nova Roasters Ltd.',
-    role: 'Packaging Designer & Illustrator',
-    description: 'Vibrant, color-coded illustrative packaging and custom coffee bag series celebrating single-origin beans.',
-    longDescription: 'For Nova Craft Coffee, we moved away from the ubiquitous brown-paper craft packaging and instead embraced a bold, chromatic universe. Each single-origin bag features an abstract topographic illustration depicting the micro-climate and altitude of the farm where the beans were harvested. The color schemes are psychologically mapped to the tasting notes (e.g., vibrant magenta and orange for high-acidity citrus notes; deep velvet blue and forest green for chocolate and earthy profiles).',
-    image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=1200',
-    secondaryImages: [
-      'https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&q=80&w=1000'
-    ],
-    tags: ['Illustration', 'Packaging Lineup', 'Color Theory', 'Retail Design'],
-    brandColors: ['#FF5A36', '#FFB100', '#2C5E43', '#FFFDF9'],
-    typography: ['Clash Display (Bold)', 'JetBrains Mono'],
-    metrics: {
-      label: 'Shelf Visibility Rank (Local Cafes)',
-      value: '#1 Best-Seller'
-    }
-  },
-  {
-    id: 'maison-art',
-    title: 'Maison de l’Art Book',
-    category: 'Editorial',
+    id: 'opengl-game-engines',
+    title: 'OpenGL 3D Game Renderer',
+    category: 'Graphics',
     year: '2024',
-    client: 'Paris Fine Arts Publishing',
-    role: 'Editorial Director & Layout Designer',
-    description: 'A premium, high-contrast, double-gatefold retrospective art book with bespoke typographic details.',
-    longDescription: 'This limited-edition 340-page hardcover publication covers the avant-garde design movements of the mid-20th century. Utilizing an asymmetric 12-column grid and a stark high-contrast layout, the design allows the monumental historical photography to breathe. To emphasize the historical timeline, we used hand-crafted editorial ligatures and printed the entire body text in a deep obsidian black soy ink on premium ultra-matte uncoated Italian paper.',
-    image: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=1200',
+    client: 'Interactive Graphics Labs',
+    role: 'C++ & OpenGL Graphics Developer',
+    description: 'Interactive 2D and 3D game engines built from the ground up using C++ and raw OpenGL API rendering pipelines.',
+    longDescription: 'Designed and programmed interactive 2D and 3D game components completely from scratch utilizing OpenGL rendering pipelines and C++. This project highlights core low-level graphics programming techniques, including vector math, custom camera systems, lighting models (Phong/Blinn-Phong), gameplay mechanics, responsive object interaction, physics collision, and custom-styled UI overlay elements rendered inside a high-frequency main game loop.',
+    image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=1200',
     secondaryImages: [
-      'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1476275466078-4007374efbbe?auto=format&fit=crop&q=80&w=1000'
+      'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&q=80&w=1000'
     ],
-    tags: ['Editorial Layout', 'Typography', 'Book Design', 'Print Production'],
-    brandColors: ['#0A0A0A', '#FFFFFF', '#D2B48C', '#555555'],
-    typography: ['Playfair Display', 'Inter'],
+    tags: ['OpenGL', 'C++', 'Computer Graphics', 'Game Engines'],
+    brandColors: ['#d4af37', '#080808', '#222222', '#ffffff'],
+    typography: ['JetBrains Mono', 'Space Grotesk'],
     metrics: {
-      label: 'Design Book of the Year Nominations',
-      value: '3 Awards'
+      label: 'Steady Rendering Performance',
+      value: '144 FPS'
     }
   },
   {
-    id: 'kinetic-identity',
-    title: 'Kinetic Motion Festival',
-    category: 'Digital',
-    year: '2026',
-    client: 'Berlin Arts Board',
-    role: 'Lead Digital Artist & Motion Designer',
-    description: 'An interactive, code-driven fluid identity and digital campaign for an experimental performance festival.',
-    longDescription: 'Kinetic Motion Festival was a digital-first event celebrating human movement and generative sound. Rather than designing a static logo, we built a custom webGL-based fluid simulation that captures real-time cursor movements and camera tracking to generate responsive, infinite logo variants. This generative art engine served as the backbone of the digital advertising campaign, custom interactive ticket sales page, and massive projection installations throughout the Berlin venue.',
-    image: 'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=1200',
-    secondaryImages: [
-      'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=1000'
-    ],
-    tags: ['Generative Design', 'Creative Coding', 'UI/UX Design', 'Fluid Mechanics'],
-    brandColors: ['#080112', '#39FF14', '#FF007F', '#00FFFF'],
-    typography: ['PPMori (Bold)', 'Space Mono'],
-    metrics: {
-      label: 'Interactive Ticket Conversion Rate',
-      value: '18.4%'
-    }
-  },
-  {
-    id: 'verdant-harvest',
-    title: 'Verdant Harvest',
-    category: 'Branding',
+    id: 'cryptography-framework',
+    title: 'Cryptographic Socket Framework',
+    category: 'Systems',
     year: '2025',
-    client: 'Verdant Co-op',
-    role: 'Brand Identity & Strategy',
-    description: 'Earthy, high-end organic farming co-op visual system and eco-friendly consumer goods branding.',
-    longDescription: 'Verdant Harvest reconnects metropolitan food enthusiasts with rural micro-farms. The visual identity rejects the typical cliché rustic look, in favor of a clean modern green aesthetic. We utilized structured typography alongside raw, high-contrast, organic botanical silhouettes that frame the content. The packaging is created with 100% biodegradable seaweed wrap, with a minimalistic label highlighting trace-back origin codes for ultimate transparency.',
-    image: 'https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&q=80&w=1200',
+    client: 'AAST Computer Science Labs',
+    role: 'Cybersecurity Architect & Developer',
+    description: 'A collection of advanced cryptography tools, securing communications and implementing structural secure network protocols.',
+    longDescription: 'Drawing from academic studies at AAST in Cybersecurity and Computer Architecture, this project implements various cryptography tools and network protocol security scripts. Features custom hash-checking functions, encryption-decryption routines using modern symmetric and asymmetric keys, and structured network socket programming to demonstrate secure communication protocols resistant to simulated cyber threats.',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200',
     secondaryImages: [
-      'https://images.unsplash.com/photo-1530251365312-f1db74553659?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&q=80&w=1000'
+      'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=1000'
     ],
-    tags: ['Sustainable Design', 'Art Direction', 'Eco-Packaging', 'Identity'],
-    brandColors: ['#1E3A27', '#E2D3BB', '#606C38', '#FEFAE0'],
-    typography: ['Outfit', 'Inter'],
+    tags: ['Cybersecurity', 'Cryptography', 'Socket Programming', 'OOP'],
+    brandColors: ['#1e1b4b', '#4f46e5', '#e0e7ff', '#030712'],
+    typography: ['JetBrains Mono', 'Inter'],
     metrics: {
-      label: 'Local Direct Consumer Sales Increase',
-      value: '+210%'
+      label: 'Encryption Overhead Latency',
+      value: '<1.2ms'
     }
   }
 ];
 
 export const services: Service[] = [
   {
-    id: 'brand-identity',
-    title: 'Brand Identity Strategy & Design',
-    description: 'We build complete visual universes that define your core values, combining robust conceptual foundations with impeccable visual style.',
+    id: 'erp-architecture',
+    title: 'ERP Workflows & Odoo Customization',
+    description: 'Engineering specialized workflow modules to automate core business operations, optimizing relational database architectures and secure record systems.',
     iconName: 'Compass',
     deliverables: [
-      'Brand Audit & Positioning Workshop',
-      'Logo Systems & Dynamic Guidelines',
-      'Custom Brand Typography Systems',
-      'Full Color Framework & Texture Direction'
+      'Custom Odoo ERP Module Development',
+      'Python & PostgreSQL Database Integration',
+      'Workflow Automation Workshops',
+      'Process Analytics & Dashboard Design'
     ]
   },
   {
-    id: 'editorial-print',
-    title: 'Editorial & Printed Publications',
-    description: 'With a deep reverence for ink and paper, we construct layouts that turn information into visual hierarchies worth preserving.',
-    iconName: 'BookOpen',
+    id: 'backend-systems',
+    title: 'Robust Backend Systems & APIs',
+    description: 'Building high-concurrency, type-safe backend environments, distributed microservices, and concurrent scheduling algorithms.',
+    iconName: 'Cpu',
     deliverables: [
-      'Editorial Strategy & Art Direction',
-      'Grid Architecture & Type Setting',
-      'Specialist Paper & Ink Procurement Guides',
-      'Limited-Edition Print Production'
+      'Scala & Python API Implementations',
+      'High-Concurrency Task Schedulers',
+      'JSON Processing & Serialization Design',
+      'Relational Schema Optimization'
     ]
   },
   {
-    id: 'custom-packaging',
-    title: 'Eco-Luxury Packaging Design',
-    description: 'Crafting three-dimensional sensory experiences that elevate retail shelf presence while championing sustainable structural engineering.',
-    iconName: 'Box',
-    deliverables: [
-      'Packaging Architecture & Unboxing Blueprints',
-      'Compostable & Recyclable Material Research',
-      '3D Visualization & Debossing Prototyping',
-      'Custom Pattern & Surface Illustrations'
-    ]
-  },
-  {
-    id: 'digital-direction',
-    title: 'High-Fidelity Interactive Experiences',
-    description: 'Translating visceral tactile design into highly interactive digital interfaces, interactive brand assets, and web layout design.',
+    id: 'frontend-engineering',
+    title: 'High-Performance Frontend Systems',
+    description: 'Crafting user-focused, pixel-perfect web application interfaces with fluid motion, modular components, and absolute responsive grids.',
     iconName: 'Monitor',
     deliverables: [
-      'Interactive Brand System Design',
-      'UI/UX Typography Layout Design',
-      'Responsive Fluid Code Mockups',
-      'Digital-First Campaign Design Guidelines'
+      'Responsive React & Vite Architecture',
+      'Interactive UI Layout Components',
+      'Tailwind CSS & Fluid Motion Design',
+      'Core Web Vitals Optimization'
+    ]
+  },
+  {
+    id: 'graphics-data',
+    title: 'Graphics Rendering & Data Analytics',
+    description: 'Developing low-level C++ & OpenGL rendering pipelines, custom camera rigs, and delivering deep data-driven business intelligence panels.',
+    iconName: 'BookOpen',
+    deliverables: [
+      'OpenGL 2D & 3D Rendering Engines',
+      'Interactive Physics & Lighting Pipelines',
+      'AI-based Classification Algorithms',
+      'Power BI & Excel Advanced Analytics'
     ]
   }
 ];
@@ -189,26 +189,26 @@ export const services: Service[] = [
 export const testimonials: Testimonial[] = [
   {
     id: '1',
-    name: 'Helena Vance',
-    role: 'Creative Director',
-    company: 'Aether Labs',
-    content: 'The packaging and branding transformed our physical products into true pieces of art. The blind debossing on the cotton stock boxes has become our signature brand signifier. Absolutely brilliant work.',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150'
+    name: 'Dr. Kareem Hassan',
+    role: 'Computer Science Professor',
+    company: 'Arab Academy for Science & Tech (AAST)',
+    content: "Ali's grasp of computer science principles, database modeling, and low-level OpenGL rendering is exemplary. His work on the Hospital ERP module concept and Scala applications demonstrates profound system architecture planning.",
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150'
   },
   {
     id: '2',
-    name: 'Kenji Sato',
-    role: 'Founder & Architect',
-    company: 'Komorebi Partners',
-    content: 'We expected a nice logo, but we received an entire architectural philosophy translated into a graphic grid system. The dynamic responsive shadow logos mirror our concrete edifices beautifully.',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150'
+    name: 'Sarah Jenkins',
+    role: 'Lead Project Coordinator',
+    company: 'Eco-Cycle Foundation',
+    content: "The smart waste platform Ali designed perfectly combines advanced PostgreSQL workflows with automated classification concepts. His work was pivotal to our agricultural optimization models.",
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150'
   },
   {
     id: '3',
-    name: 'Marcus Thorne',
-    role: 'Head of Growth',
-    company: 'Nova Roasters',
-    content: 'Our retail shelf performance soared by over 140% within two months of launching the topographic single-origin bag designs. Customers collect the packaging just for the artwork!',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150'
+    name: 'Alex Rivers',
+    role: 'Lead Architect',
+    company: 'Apex Digital Labs',
+    content: "Working with Ali on interactive graphics components and responsive frontend layouts was a masterclass in clean execution. His C++ algorithms and structured CSS modules are stellar.",
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150'
   }
 ];

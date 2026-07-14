@@ -35,10 +35,10 @@ export default function Header() {
 
   const navItems = [
     { label: 'Selected Works', href: '#works' },
-    { label: 'Branding Lab', href: '#brand-lab' },
-    { label: 'Services', href: '#services' },
-    { label: 'About Philosophy', href: '#about' },
-    { label: 'Start Project', href: '#contact' },
+    { label: 'Developer Sandbox', href: '#brand-lab' },
+    { label: 'Capabilities', href: '#services' },
+    { label: 'About & Philosophy', href: '#about' },
+    { label: 'Collaborate', href: '#contact' },
   ];
 
   return (
@@ -60,12 +60,12 @@ export default function Header() {
           >
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 bg-brand-orange rounded-full animate-pulse" />
-              <span className="group-hover:text-brand-orange transition-colors duration-300">
-                Studio Salah
+              <span className="group-hover:text-brand-orange transition-colors duration-300 text-gold-gradient">
+                Ali Hany Medhat
               </span>
             </div>
-            <span className="font-mono text-[9px] text-brand-muted tracking-widest font-normal lowercase">
-              creative direct & brand design
+            <span className="font-mono text-[9px] text-brand-orange tracking-widest font-semibold uppercase">
+              Software Engineer & ERP Specialist
             </span>
           </a>
 
@@ -73,11 +73,11 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-8 font-mono text-[10px] text-brand-muted">
             <div className="flex items-center gap-2 border-r border-white/10 pr-8">
               <Globe className="w-3.5 h-3.5 animate-spin-slow text-brand-orange" />
-              <span>LONDON / DUSSELDORF / GLOBAL</span>
+              <span>ALEXANDRIA, EGYPT / GLOBAL</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 bg-green-500 rounded-full" />
-              <span>EST TIME: {timeString || '09:33:10'}</span>
+              <span>LOCAL TIME: {timeString || '09:33:10'}</span>
             </div>
           </div>
 
@@ -97,9 +97,9 @@ export default function Header() {
             <a
               id="header-cta"
               href="#contact"
-              className="flex items-center gap-1.5 px-4 py-2 border border-brand-dark font-mono text-[11px] uppercase tracking-wider rounded-full hover:bg-brand-dark hover:text-brand-cream transition-all duration-300"
+              className="flex items-center gap-1.5 px-4 py-2 border border-brand-orange text-[#f4f4f4] hover:bg-brand-orange hover:text-[#080808] font-mono text-[11px] uppercase tracking-wider rounded-full transition-all duration-300"
             >
-              Consultation
+              Collaborate
               <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
           </nav>
@@ -148,21 +148,21 @@ export default function Header() {
 
             <div className="flex flex-col gap-6 pt-12 border-t border-white/10">
               <div className="flex justify-between items-center font-mono text-xs">
-                <span className="text-brand-muted">Studio Email:</span>
+                <span className="text-brand-muted">Email:</span>
                 <a
-                  href="mailto:studio@salahdesign.com"
-                  className="hover:text-brand-orange transition-colors"
+                  href="mailto:alihanymedhat@gmail.com"
+                  className="hover:text-brand-orange transition-colors text-brand-orange"
                 >
-                  studio@salahdesign.com
+                  alihanymedhat@gmail.com
                 </a>
               </div>
               <a
                 id="mobile-cta-button"
                 href="#contact"
                 onClick={() => setIsOpen(false)}
-                className="w-full text-center py-4 bg-brand-dark text-brand-cream font-mono text-sm uppercase rounded-full hover:bg-brand-orange transition-all duration-300 shadow-md"
+                className="w-full text-center py-4 bg-brand-orange text-[#080808] font-bold font-mono text-sm uppercase rounded-full hover:bg-[#f4f4f4] transition-all duration-300 shadow-md"
               >
-                Let's Build Your Identity
+                Start System Collaboration
               </a>
             </div>
           </motion.div>

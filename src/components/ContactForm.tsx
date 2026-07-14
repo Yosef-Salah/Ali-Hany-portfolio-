@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Send, CheckCircle2, ChevronRight, HelpCircle, Loader2 } from 'lucide-react';
 
 export default function ContactForm() {
-  const [selectedCategory, setSelectedCategory] = useState<string>('Visual Identity');
-  const [budget, setBudget] = useState<string>('$10,000 – $25,000');
+  const [selectedCategory, setSelectedCategory] = useState<string>('ERP Systems');
+  const [budget, setBudget] = useState<string>('Medium Initiative');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -12,17 +12,17 @@ export default function ContactForm() {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
 
   const categories = [
-    'Visual Identity',
-    'Custom Packaging',
-    'Editorial Layout',
-    'Interactive Digital',
+    'ERP Systems',
+    'Backend Core',
+    'Frontend Web',
+    'Computer Graphics',
   ];
 
   const budgets = [
-    '<$10,000',
-    '$10,000 – $25,000',
-    '$25,000 – $50,000',
-    '$50,000+',
+    'Small Scale / Lab',
+    'Medium Initiative',
+    'Enterprise ERP',
+    'Research & Dev',
   ];
 
   const handleSubmit = (e: FormEvent) => {
@@ -49,10 +49,10 @@ export default function ContactForm() {
                 05 / Collaboration Gateway
               </span>
               <h2 className="font-display font-bold text-4xl md:text-5xl tracking-tight text-gold-gradient uppercase">
-                Initiate a<br />Brand Evolution
+                Initiate a<br />Technical Collaboration
               </h2>
               <p className="text-brand-muted text-sm md:text-base leading-relaxed max-w-md">
-                Ready to redefine your presence? Tell us about your project brief, objectives, and budget expectations. We will respond with a tailored conceptual proposal within 24 business hours.
+                Ready to engineer the next big idea? Send me your project details, goals, or academic collaborations. I will get in touch with you to discuss the details.
               </p>
             </div>
 
@@ -60,17 +60,17 @@ export default function ContactForm() {
             <div className="space-y-4 pt-8 border-t border-white/10">
               <div className="flex justify-between text-xs font-mono py-1">
                 <span className="text-brand-muted uppercase">HQ LOCATION:</span>
-                <span className="text-[#f4f4f4] font-medium">LONDON / REMOTE</span>
+                <span className="text-[#f4f4f4] font-medium">ALEXANDRIA, EGYPT / REMOTE</span>
               </div>
               <div className="flex justify-between text-xs font-mono py-1">
                 <span className="text-brand-muted uppercase">DIRECT EMAIL:</span>
-                <a href="mailto:studio@salahdesign.com" className="text-brand-orange font-medium hover:underline">
-                  studio@salahdesign.com
+                <a href="mailto:alihanymedhat@gmail.com" className="text-brand-orange font-medium hover:underline">
+                  alihanymedhat@gmail.com
                 </a>
               </div>
               <div className="flex justify-between text-xs font-mono py-1">
                 <span className="text-brand-muted uppercase">BUSINESS HOUR:</span>
-                <span className="text-[#f4f4f4] font-medium">09:00 – 18:00 GMT</span>
+                <span className="text-[#f4f4f4] font-medium">09:00 – 18:00 EET</span>
               </div>
             </div>
           </div>
@@ -203,7 +203,7 @@ export default function ContactForm() {
                 >
                   <Loader2 className="w-10 h-10 text-brand-orange animate-spin" />
                   <p className="font-mono text-xs text-brand-muted uppercase tracking-widest animate-pulse">
-                    Analyzing brand requirements...
+                    Analyzing system requirements...
                   </p>
                 </motion.div>
               )}
@@ -222,17 +222,17 @@ export default function ContactForm() {
                       Transmission Confirmed
                     </h3>
                     <p className="text-brand-muted text-sm max-w-md mx-auto">
-                      Thank you, <span className="font-semibold text-[#f4f4f4]">{name}</span>. Your brief regarding <span className="font-semibold text-brand-orange">{selectedCategory}</span> is being processed by our design desk.
+                      Thank you, <span className="font-semibold text-[#f4f4f4]">{name}</span>. Your brief regarding <span className="font-semibold text-brand-orange">{selectedCategory}</span> is being processed.
                     </p>
                   </div>
                   <div className="bg-[#181818] border border-white/5 p-4 rounded-2xl max-w-sm mx-auto text-left space-y-2.5 font-mono text-[10px]">
                     <span className="text-brand-orange font-bold uppercase tracking-wider block">
-                      NEXT PHASE OBJECTIVES
+                      NEXT COLLABORATION OBJECTIVES
                     </span>
                     <p className="text-[#f4f4f4]">
-                      1. Brand Alignment Assessment.<br />
-                      2. Design Desk review of budget parameters ({budget}).<br />
-                      3. Delivery of tailored aesthetic roadmap to {email}.
+                      1. Technical feasibility & stack evaluation.<br />
+                      2. Analysis of project parameters and resources ({budget}).<br />
+                      3. Delivery of responsive action plan to {email}.
                     </p>
                   </div>
                   <button
